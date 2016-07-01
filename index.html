@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="core">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+	<title>Recruitment Ex.5</title>
+	
+	<link rel="stylesheet" href="public/bundle.css" />
+	<script defer async src="public/bundle.css"></script>
+</head>
+<body>
+	<!-- EX. SPEC
+	Navigation at the top of the page, fixed positioning
+	Menu that “jumps” to the relevant section
+	-->
+	<header class="o-header o-header--fixed">
+		<div class="o-header__container">
+			<section class="o-header__section">
+				<nav class="o-header__nav">
+					<ul class="o-header__nav-items">
+						<li class="o-header__nav-item">
+							<a href="#section-1" title="go to Section 1..">Section 1</a>
+						</li>
+						<li class="o-header__nav-item">
+							<a href="#section-2" title="go to Section 2..">Section 2</a>
+						</li>
+						<li class="o-header__nav-item">
+							<a href="#section-2" title="go to Section 2..">Section 2</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+	</header>
+
+	<!-- EX. SPEC 
+	Layout using o-grid
+	-->
+	<div class="o-grid-container">
+
+	<section id="section-1">
+		<!-- EX. SPEC
+			O-typography based content with text+image
+			(feel free to use https://origami-build.ft.com/v2/demos/o-typography@4.1.0/article as content)
+		-->
+		
+		<h1 class="o-typography-heading1">A ‘Rosetta stone’ that may unlock the mystery of life on Earth</h1>
+		
+		<p class="o-typography-lead">Belgian-Brazilian brewer ups the stakes in beer takeover battle</p>
+
+		<p class="o-typography-body">Anheuser-Busch InBev raised its proposed takeover offer for SABMiller to £43.50 a share on Monday, upping the stakes in a takeover battle to create the world’s dominant brewing company, according to people familiar with the latest bid.</p>
+
+		<h2 class="o-typography-heading2">Heading 2 Lorem ipsum dolor sit amet.</h2>
+
+		<p class="o-typography-body">Glencore has fired the starting gun on a sales process for two copper assets after the miner-cum-trader was approached by several suitors.</p>
+
+		<figure>
+			<img alt="" src="https://image.webservices.ft.com/v1/images/raw/http%3A%2F%2Fim.ft-static.com%2Fcontent%2Fimages%2Fa60ae24b-b87f-439c-bf1b-6e54946b4cf2.img?source=otype">
+			<figcaption class="o-typography-caption">
+				<a class="o-typography-link" href="#void">©Lorem</a> John Doe
+			</figcaption>
+		</figure>
+		<p class="o-typography-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aperiam magni, sint ut minus omnis eligendi velit non dolor odio optio quaerat dignissimos assumenda excepturi impedit, modi molestias iste. Suscipit tempora nemo, id ducimus vero voluptates omnis cumque provident. Eum velit temporibus consectetur officia! Sit saepe deserunt at nisi necessitatibus!</p>
+		
+	</section>
+	
+	<section id="section-2">
+		<!--
+		EX. SPEC:
+		O-tabs component featuring 3 tabs, lorem-ipsum as content
+		-->
+		<div class="o-grid-row">
+			
+			<ul data-o-component="o-tabs" class="o-tabs" role="tablist" data-o-tabs-update-url="">
+				<li role="tab"><a href="#tabContent1">Tab 1</a></li>
+				<li role="tab"><a href="#tabContent2">Tab 2</a></li>
+				<li role="tab"><a href="#tabContent3">Tab 3</a></li>
+			</ul>
+			<div id="tabContent1" class="o-tabs__tabpanel">
+				<h3>Tab content 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ipsum.</p>
+			</div>
+			<div id="tabContent2" class="o-tabs__tabpanel">
+				<h3>Tab content 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ipsum.</p>
+			</div>
+			<div id="tabContent3" class="o-tabs__tabpanel">
+				<h3>Tab content 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ipsum.</p>
+			</div>
+			
+		</div><!-- / .o-grid-row -->
+
+	</section>
+	
+	<section id="section-3">
+		<!--
+		EX. SPEC:
+		Same as section 1, the only difference is that there is 2-column wide sidebar 
+		that disappears on mobile (size “S” and below). Lorem ipsum is fine for the sidebar content as well.
+		-->
+		<div class="o-grid-row">
+			<div data-o-grid-colspan="2 Shide"><!-- sidebar content -->
+				Lorem ipsum dolor sit amet, simul tamquam pro ne, latine laoreet ne vix, id quidam forensibus elaboraret est. 
+				Dicat ubique an pro, vel ut case minim, semper intellegam mel cu. Ex usu odio integre vulputate. 
+				Ea brute numquam nam, altera dolorum duo ad. Purto adipiscing concludaturque usu in, cum erat invidunt et.
+			
+			</div>
+			<div data-o-grid-colspan="10">Another div, 4 columns wide</div>
+		</div><!-- / .o-grid-row -->
+		
+	</section>
+
+		
+	
+
+	</div><!-- / .o-grid-container -->
+</body>
+</html>
